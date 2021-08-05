@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/main.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+    <script src="js/main.js" defer></script>
+    <title>Weather APP</title>
+</head>
+
+<body>
+    <div class="card">
+        <div class="card-body">
+            <h1 class="card-title">You're looking at <br>
+                <div id="cityname"></div>
+            </h1>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Change Town/City
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="#">            
+                        <form id="EditCity">
+                            <div class="mb-3">
+                                <label class="form-label">Town or City Name</label>
+                                <input class="form-control" id="newCity">
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </div>
+                        </form>
+                    </a></li>
+
+                </ul>
+            </div>
+
+
+
+
+            <p class="card-text">
+            <div id="weatherIcon"></div>
+            <div id="weatherImage"></div>
+            <div id="current"></div>
+            <div id="weather"></div>
+            <div id="hi"></div>
+            <div id="lo"></div>
+            </p>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.5.4/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
